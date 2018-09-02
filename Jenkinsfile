@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Compile Stage') {   
             steps {
-                mail to:"perumal9791@gmail.com", subject: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'", body: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'"                   
+                //mail to:"perumal9791@gmail.com", subject: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'", body: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'"                   
                 withMaven(maven : 'Maven 2018') {
                     sh 'mvn clean compile'
                 }
