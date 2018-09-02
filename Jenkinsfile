@@ -30,7 +30,7 @@ pipeline {
             }
         }
     }       
-        post {
+      /*  post {
         success {
             mail to:"perumal9791@gmail.com", subject: "SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'", body: "SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'"
         }
@@ -43,5 +43,5 @@ pipeline {
         changed {
             mail to:"perumal9791@gmail.com", subject:"CHANGED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'", body: "CHANGED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'"
         }
-    }
+    }*/
 }
